@@ -1,0 +1,17 @@
+package landing
+
+import (
+        "htmx-templ/view/layout"
+       )
+
+templ Show() {
+    @layout.Base() {
+        <form action="" method="post">
+            <label for="username">username</label>
+            <input type="text" name="username"></input>
+            <label for="password">password</label>
+            <input type="password" name="password"></input>
+            <button type="submit">submit</button>
+        </form>
+    }
+}
